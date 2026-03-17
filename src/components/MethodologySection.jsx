@@ -26,8 +26,9 @@ export function MethodologySection() {
         <h2>Built for official updates, not live market claims.</h2>
         <p>
           Fuel Price Monitoring PH is structured around DOE publications. The current live data
-          source is the DOE legacy retail pump price archive, which publishes official regional PDF
-          files that this app normalizes into JSON.
+          source is the DOE current PDF archive, which publishes official regional files that this
+          app normalizes into JSON. The dataset is scheduled to sync every midnight Philippine
+          time.
         </p>
       </article>
 

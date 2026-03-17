@@ -19,24 +19,7 @@ export const methodologyCards = [
       'Highlights weekly fuel price adjustments',
       'Compares regional averages',
       'Surfaces simple historical trends',
-    ],
-  },
-  {
-    title: 'What the app does not do',
-    items: [
-      'Provide live station prices',
-      'Guarantee exact pump pricing at a specific location',
-      'Replace official DOE publications',
-      'Infer data that was not published',
-    ],
-  },
-  {
-    title: 'Planned automation',
-    items: [
-      'Scheduled GitHub Actions updates',
-      'HTML and PDF parsing support',
-      'Normalized JSON outputs for the frontend',
-      'Static deployment through GitHub Pages',
+      'Refreshes the dataset every midnight Philippine time',
     ],
   },
 ];

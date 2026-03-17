@@ -22,22 +22,57 @@ function PriceCard({ label, productStats, weeklyChange }) {
   );
 }
 
-export function LatestPricesSection({ focusRegion, weeklyAdjustment }) {
+function RegionSnapshot({ primaryRegion, weeklyAdjustment }) {
+  if (!primaryRegion.data) {
+    return (
+      <article className="region-block region-block-empty">
+        <div className="region-block-header">
+          <p className="section-kicker">{primaryRegion.label}</p>
+          <h3>DOE data not currently available</h3>
+        </div>
+        <p className="region-block-note">
+          This primary region is reserved in the UI, but the current automated DOE sync did not
+          resolve a fresh source file for it yet.
+        </p>
+      </article>
+    );
+  }
+
+  return (
+    <article className="region-block">
+      <div className="region-block-header">
+        <p className="section-kicker">{primaryRegion.label}</p>
+        <h3>{primaryRegion.data.periodLabel}</h3>
+      </div>
+      <div className="cards-row">
+        {productOrder.map((product) => (
+          <PriceCard
+            key={`${primaryRegion.key}-${product}`}
+            label={productLabels[product]}
+            productStats={primaryRegion.data.products[product]}
+            weeklyChange={weeklyAdjustment[product]}
+          />
+        ))}
+      </div>
+    </article>
+  );
+}
+
+export function LatestPricesSection({ primaryRegions, weeklyAdjustment }) {
   return (
     <section className="section section-highlight" id="latest">
       <SectionHeading
         kicker="Latest Prices"
         title="Current DOE-monitored snapshot"
-        description="These figures reflect the latest available DOE monitoring data for the focus region. Weekly movement here is derived from consecutive DOE monitored averages, not a live station feed."
+        description="These figures prioritize NCR. Weekly movement is derived from consecutive DOE monitored averages, not a live station feed."
       />
 
-      <div className="cards-row">
-        {productOrder.map((product) => (
-          <PriceCard
-            key={product}
-            label={productLabels[product]}
-            productStats={focusRegion.products[product]}
-            weeklyChange={weeklyAdjustment[product]}
+      <div className="region-blocks">
+        {primaryRegions.map((primaryRegion) => (
+          <RegionSnapshot
+            key={primaryRegion.key}
+            primaryRegion={primaryRegion}
+            weeklyAdjustment={weeklyAdjustment}
           />
         ))}
       </div>

@@ -1,7 +1,9 @@
 import { heroActions } from '../constants/site';
 import { formatDate, formatDateTime } from '../utils/formatters';
 
-function HeroPanel({ latest, focusRegion }) {
+function HeroPanel({ latest, focusRegion, primaryRegions }) {
+  const primaryRegionLabels = primaryRegions.map((region) => region.label).join(' and ');
+
   return (
     <aside className="hero-panel">
       <div className="panel-label">Latest publication</div>
@@ -16,11 +18,11 @@ function HeroPanel({ latest, focusRegion }) {
           <dd>{formatDateTime(latest.lastUpdated)}</dd>
         </div>
         <div>
-          <dt>Focus region</dt>
-          <dd>{focusRegion.region}</dd>
+          <dt>Primary regions</dt>
+          <dd>{primaryRegionLabels}</dd>
         </div>
         <div>
-          <dt>DOE week</dt>
+          <dt>Current DOE week</dt>
           <dd>{focusRegion.periodLabel}</dd>
         </div>
       </dl>
@@ -32,7 +34,7 @@ function HeroPanel({ latest, focusRegion }) {
   );
 }
 
-export function HeroSection({ latest, focusRegion }) {
+export function HeroSection({ latest, focusRegion, primaryRegions }) {
   return (
     <header className="site-header" id="home">
       <div className="hero">
@@ -43,6 +45,9 @@ export function HeroSection({ latest, focusRegion }) {
             Track DOE-monitored fuel prices, compare regional averages, and read weekly
             adjustments in a format built for fast scanning on mobile and desktop.
           </p>
+          <p className="hero-text hero-subtext">
+            Data here is scheduled to refresh every midnight Philippine time.
+          </p>
           <div className="hero-actions">
             {heroActions.map((action) => (
               <a className={`button ${action.variant}`} href={action.href} key={action.href}>
@@ -52,7 +57,7 @@ export function HeroSection({ latest, focusRegion }) {
           </div>
         </div>
 
-        <HeroPanel latest={latest} focusRegion={focusRegion} />
+        <HeroPanel latest={latest} focusRegion={focusRegion} primaryRegions={primaryRegions} />
       </div>
     </header>
   );

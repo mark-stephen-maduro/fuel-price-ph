@@ -8,11 +8,14 @@ function TrendBar({ effectiveDate, productKey, value, maxMagnitude }) {
 
   return (
     <div className="sparkline-column">
-      <div
-        className={`sparkline-bar ${directionClass}`}
-        style={{ height }}
-        title={`${formatDate(effectiveDate)}: ${formatChange(value)} PHP/L`}
-      />
+      <span className={`sparkline-value ${directionClass}`}>{formatChange(value)}</span>
+      <div className="sparkline-bar-track">
+        <div
+          className={`sparkline-bar ${directionClass}`}
+          style={{ height }}
+          title={`${formatDate(effectiveDate)}: ${formatChange(value)} PHP/L`}
+        />
+      </div>
       <span>{formatShortDate(effectiveDate)}</span>
       <span className="sr-only">{`${productLabels[productKey]} on ${formatDate(effectiveDate)}`}</span>
     </div>
@@ -20,9 +23,15 @@ function TrendBar({ effectiveDate, productKey, value, maxMagnitude }) {
 }
 
 function TrendCard({ productKey, history, maxMagnitude }) {
+  const latestValue = history[0]?.weeklyAdjustment[productKey] ?? 0;
+
   return (
     <article className="trend-card">
       <div className="section-kicker">{productLabels[productKey]}</div>
+      <div className="trend-summary">
+        <strong>{formatChange(latestValue)} PHP/L</strong>
+        <span>Latest weekly movement</span>
+      </div>
       <div className="sparkline" aria-label={`${productLabels[productKey]} weekly trend`}>
         {history.map((entry) => (
           <TrendBar

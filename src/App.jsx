@@ -25,9 +25,13 @@ function App() {
     <div className="app-shell">
       <SiteHeader />
       <main>
-        <HeroSection latest={dashboard.latest} focusRegion={dashboard.focusRegion} />
-        <LatestPricesSection
+        <HeroSection
+          latest={dashboard.latest}
           focusRegion={dashboard.focusRegion}
+          primaryRegions={dashboard.primaryRegions}
+        />
+        <LatestPricesSection
+          primaryRegions={dashboard.primaryRegions}
           weeklyAdjustment={dashboard.weeklyAdjustment}
         />
         <CompareSection
