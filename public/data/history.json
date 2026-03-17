@@ -1,0 +1,58 @@
+{
+  "history": [
+    {
+      "effectiveDate": "2025-06-24",
+      "periodLabel": "June 24-30, 2025",
+      "weeklyAdjustment": {
+        "gasoline": 3.8,
+        "diesel": 6.44,
+        "kerosene": 2.4
+      }
+    },
+    {
+      "effectiveDate": "2025-06-17",
+      "periodLabel": "June 17-23, 2025",
+      "weeklyAdjustment": {
+        "gasoline": 2.5,
+        "diesel": -0.51,
+        "kerosene": 1.5
+      }
+    },
+    {
+      "effectiveDate": "2025-06-10",
+      "periodLabel": "June 10-16, 2025",
+      "weeklyAdjustment": {
+        "gasoline": 0.6,
+        "diesel": 0.84,
+        "kerosene": 0.3
+      }
+    },
+    {
+      "effectiveDate": "2025-06-03",
+      "periodLabel": "June 3-9, 2025",
+      "weeklyAdjustment": {
+        "gasoline": -1.16,
+        "diesel": 0.63,
+        "kerosene": -0.1
+      }
+    },
+    {
+      "effectiveDate": "2025-05-27",
+      "periodLabel": "May 27-June 2, 2025",
+      "weeklyAdjustment": {
+        "gasoline": 0.67,
+        "diesel": 0.02,
+        "kerosene": -0.4
+      }
+    },
+    {
+      "effectiveDate": "2025-05-20",
+      "periodLabel": "May 20-26, 2025",
+      "weeklyAdjustment": {
+        "gasoline": 0,
+        "diesel": 0,
+        "kerosene": 0
+      }
+    }
+  ]
+}

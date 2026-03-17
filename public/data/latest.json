@@ -1,0 +1,106 @@
+{
+  "lastUpdated": "2026-03-17T14:23:44.657Z",
+  "source": "Department of Energy Philippines legacy retail pump price archive",
+  "effectiveDate": "2025-06-24",
+  "coverageNote": "The latest accessible official DOE archive used by this app currently contains regional files up to June 24-30, 2025.",
+  "weeklyAdjustment": {
+    "gasoline": 3.8,
+    "diesel": 6.44,
+    "kerosene": 2.4
+  },
+  "regions": [
+    {
+      "region": "NCR",
+      "effectiveDate": "2025-06-24",
+      "periodLabel": "June 24-30, 2025",
+      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/NCR%20Price%20Monitoring%2006242025.pdf",
+      "products": {
+        "gasoline": {
+          "min": 49.75,
+          "max": 77.05,
+          "average": 62.62
+        },
+        "diesel": {
+          "min": 49.9,
+          "max": 74,
+          "average": 60.91
+        },
+        "kerosene": {
+          "min": 71.9,
+          "max": 89.04,
+          "average": 72.62
+        }
+      }
+    },
+    {
+      "region": "Region IV-A",
+      "effectiveDate": "2025-06-24",
+      "periodLabel": "June 24-30, 2025",
+      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Region%20IV%20-%20A%20CALABARZON%20%284%29.pdf",
+      "products": {
+        "gasoline": {
+          "min": 51.2,
+          "max": 72.39,
+          "average": 56.46
+        },
+        "diesel": {
+          "min": 50.75,
+          "max": 68.94,
+          "average": 57.48
+        },
+        "kerosene": {
+          "min": 71.9,
+          "max": 87.88,
+          "average": 75.81
+        }
+      }
+    },
+    {
+      "region": "Region V",
+      "effectiveDate": "2025-06-24",
+      "periodLabel": "June 24-30, 2025",
+      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Region%20V%20Bicol%20%284%29.pdf",
+      "products": {
+        "gasoline": {
+          "min": 54.29,
+          "max": 76.5,
+          "average": 60.54
+        },
+        "diesel": {
+          "min": 55.4,
+          "max": 70.45,
+          "average": 58.35
+        },
+        "kerosene": {
+          "min": 71,
+          "max": 82.16,
+          "average": 77.4
+        }
+      }
+    },
+    {
+      "region": "Region III",
+      "effectiveDate": "2025-05-27",
+      "periodLabel": "May 27-June 2, 2025",
+      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Price%20Monitoring%20for%20LF%20as%20of%20May%2027%20to%20June%202%2C%202025%20Reg%20III.pdf",
+      "products": {
+        "gasoline": {
+          "min": 45.9,
+          "max": 70.85,
+          "average": 51.36
+        },
+        "diesel": {
+          "min": 44.75,
+          "max": 63.84,
+          "average": 48.55
+        },
+        "kerosene": {
+          "min": 65.33,
+          "max": 65.33,
+          "average": 65.33
+        }
+      }
+    }
+  ],
+  "focusRegionSourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/NCR%20Price%20Monitoring%2006242025.pdf"
+}
