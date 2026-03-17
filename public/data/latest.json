@@ -1,106 +1,60 @@
 {
-  "lastUpdated": "2026-03-17T14:23:44.657Z",
-  "source": "Department of Energy Philippines legacy retail pump price archive",
-  "effectiveDate": "2025-06-24",
-  "coverageNote": "The latest accessible official DOE archive used by this app currently contains regional files up to June 24-30, 2025.",
+  "lastUpdated": "2026-03-17T14:40:04.647Z",
+  "source": "Department of Energy Philippines current prod-cms retail pump price PDFs",
+  "effectiveDate": "2026-03-10",
+  "focusRegionName": "Mindanao",
+  "coverageNote": "This dataset uses current official 2026 DOE prod-cms PDFs that could be resolved automatically at sync time. Region coverage is limited to sources with stable fetchable URL patterns.",
   "weeklyAdjustment": {
-    "gasoline": 3.8,
-    "diesel": 6.44,
-    "kerosene": 2.4
+    "gasoline": 12.01,
+    "diesel": 21.67,
+    "kerosene": 22.34
   },
   "regions": [
     {
       "region": "NCR",
-      "effectiveDate": "2025-06-24",
-      "periodLabel": "June 24-30, 2025",
-      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/NCR%20Price%20Monitoring%2006242025.pdf",
+      "effectiveDate": "2026-03-10",
+      "periodLabel": "March 10-16, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/ncr-price-monitoring-03102026n-pdf",
       "products": {
         "gasoline": {
-          "min": 49.75,
-          "max": 77.05,
-          "average": 62.62
+          "min": 63.4,
+          "max": 83.79,
+          "average": 71.05
         },
         "diesel": {
-          "min": 49.9,
-          "max": 74,
-          "average": 60.91
+          "min": 70.95,
+          "max": 99.06,
+          "average": 84.31
         },
         "kerosene": {
-          "min": 71.9,
-          "max": 89.04,
-          "average": 72.62
+          "min": 85,
+          "max": 134.89,
+          "average": 121.2
         }
       }
     },
     {
-      "region": "Region IV-A",
-      "effectiveDate": "2025-06-24",
-      "periodLabel": "June 24-30, 2025",
-      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Region%20IV%20-%20A%20CALABARZON%20%284%29.pdf",
+      "region": "Mindanao",
+      "effectiveDate": "2026-03-10",
+      "periodLabel": "March 10-16, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/10-lfro-price-monitoring-march-10-2026-pdf",
       "products": {
         "gasoline": {
-          "min": 51.2,
-          "max": 72.39,
-          "average": 56.46
+          "min": 55,
+          "max": 91.64,
+          "average": 70.01
         },
         "diesel": {
-          "min": 50.75,
-          "max": 68.94,
-          "average": 57.48
+          "min": 55,
+          "max": 99.3,
+          "average": 80.53
         },
         "kerosene": {
-          "min": 71.9,
-          "max": 87.88,
-          "average": 75.81
-        }
-      }
-    },
-    {
-      "region": "Region V",
-      "effectiveDate": "2025-06-24",
-      "periodLabel": "June 24-30, 2025",
-      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Region%20V%20Bicol%20%284%29.pdf",
-      "products": {
-        "gasoline": {
-          "min": 54.29,
-          "max": 76.5,
-          "average": 60.54
-        },
-        "diesel": {
-          "min": 55.4,
-          "max": 70.45,
-          "average": 58.35
-        },
-        "kerosene": {
-          "min": 71,
-          "max": 82.16,
-          "average": 77.4
-        }
-      }
-    },
-    {
-      "region": "Region III",
-      "effectiveDate": "2025-05-27",
-      "periodLabel": "May 27-June 2, 2025",
-      "sourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/Price%20Monitoring%20for%20LF%20as%20of%20May%2027%20to%20June%202%2C%202025%20Reg%20III.pdf",
-      "products": {
-        "gasoline": {
-          "min": 45.9,
-          "max": 70.85,
-          "average": 51.36
-        },
-        "diesel": {
-          "min": 44.75,
-          "max": 63.84,
-          "average": 48.55
-        },
-        "kerosene": {
-          "min": 65.33,
-          "max": 65.33,
-          "average": 65.33
+          "min": 77,
+          "max": 118.75,
+          "average": 104.66
         }
       }
     }
-  ],
-  "focusRegionSourceUrl": "https://legacy.doe.gov.ph/sites/default/files/pdf/price_watch/NCR%20Price%20Monitoring%2006242025.pdf"
+  ]
 }

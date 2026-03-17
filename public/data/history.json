@@ -1,53 +1,59 @@
 {
   "history": [
     {
-      "effectiveDate": "2025-06-24",
-      "periodLabel": "June 24-30, 2025",
+      "effectiveDate": "2026-03-10",
+      "periodLabel": "March 10-16, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/10-lfro-price-monitoring-march-10-2026-pdf",
       "weeklyAdjustment": {
-        "gasoline": 3.8,
-        "diesel": 6.44,
-        "kerosene": 2.4
+        "gasoline": 12.01,
+        "diesel": 21.67,
+        "kerosene": 22.34
       }
     },
     {
-      "effectiveDate": "2025-06-17",
-      "periodLabel": "June 17-23, 2025",
+      "effectiveDate": "2026-03-03",
+      "periodLabel": "March 3-9, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/09-lfro-price-monitoring-march-03-2026-pdf",
       "weeklyAdjustment": {
-        "gasoline": 2.5,
-        "diesel": -0.51,
-        "kerosene": 1.5
+        "gasoline": 0.71,
+        "diesel": 1.17,
+        "kerosene": 2.2
       }
     },
     {
-      "effectiveDate": "2025-06-10",
-      "periodLabel": "June 10-16, 2025",
-      "weeklyAdjustment": {
-        "gasoline": 0.6,
-        "diesel": 0.84,
-        "kerosene": 0.3
-      }
-    },
-    {
-      "effectiveDate": "2025-06-03",
-      "periodLabel": "June 3-9, 2025",
-      "weeklyAdjustment": {
-        "gasoline": -1.16,
-        "diesel": 0.63,
-        "kerosene": -0.1
-      }
-    },
-    {
-      "effectiveDate": "2025-05-27",
-      "periodLabel": "May 27-June 2, 2025",
+      "effectiveDate": "2026-02-17",
+      "periodLabel": "February 17-23, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/07-lfro-price-monitoring-february-17-2026-pdf",
       "weeklyAdjustment": {
         "gasoline": 0.67,
-        "diesel": 0.02,
-        "kerosene": -0.4
+        "diesel": -0.78,
+        "kerosene": 5.68
       }
     },
     {
-      "effectiveDate": "2025-05-20",
-      "periodLabel": "May 20-26, 2025",
+      "effectiveDate": "2026-02-10",
+      "periodLabel": "February 10-16, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/06-lfro-price-monitoring-february-10-2026-pdf",
+      "weeklyAdjustment": {
+        "gasoline": 0.4,
+        "diesel": 1.31,
+        "kerosene": -3.45
+      }
+    },
+    {
+      "effectiveDate": "2026-02-03",
+      "periodLabel": "February 3-9, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/05-lfro-price-monitoring-february-3-2026-pdf",
+      "weeklyAdjustment": {
+        "gasoline": -0.05,
+        "diesel": -0.38,
+        "kerosene": 2.63
+      }
+    },
+    {
+      "effectiveDate": "2026-01-27",
+      "periodLabel": "January 27-February 2, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/04-lfro-price-monitoring-january-27-2026-pdf",
       "weeklyAdjustment": {
         "gasoline": 0,
         "diesel": 0,
