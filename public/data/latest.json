@@ -1,58 +1,58 @@
 {
-  "lastUpdated": "2026-03-21T16:17:27.971Z",
+  "lastUpdated": "2026-03-22T16:18:18.156Z",
   "source": "Department of Energy Philippines current prod-cms retail pump price PDFs",
-  "effectiveDate": "2026-03-10",
+  "effectiveDate": "2026-03-17",
   "focusRegionName": "Mindanao",
   "coverageNote": "This dataset uses current official 2026 DOE prod-cms PDFs that could be resolved automatically at sync time. Region coverage is limited to sources with stable fetchable URL patterns.",
   "weeklyAdjustment": {
-    "gasoline": 12.01,
-    "diesel": 21.67,
-    "kerosene": 22.34
+    "gasoline": 14.48,
+    "diesel": 21.6,
+    "kerosene": 16.67
   },
   "regions": [
     {
       "region": "NCR",
-      "effectiveDate": "2026-03-10",
-      "periodLabel": "March 10-16, 2026",
-      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/ncr-price-monitoring-03102026n-pdf",
+      "effectiveDate": "2026-03-17",
+      "periodLabel": "March 17-23, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/ncr-price-monitoring-03172026-pdf",
       "products": {
         "gasoline": {
-          "min": 63.4,
-          "max": 83.79,
-          "average": 71.05
+          "min": 74.6,
+          "max": 100.4,
+          "average": 85.19
         },
         "diesel": {
-          "min": 70.95,
-          "max": 99.06,
-          "average": 84.31
+          "min": 92,
+          "max": 126.2,
+          "average": 107.26
         },
         "kerosene": {
-          "min": 85,
-          "max": 134.89,
-          "average": 121.2
+          "min": 99.99,
+          "max": 143.79,
+          "average": 132.1
         }
       }
     },
     {
       "region": "Mindanao",
-      "effectiveDate": "2026-03-10",
-      "periodLabel": "March 10-16, 2026",
-      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/10-lfro-price-monitoring-march-10-2026-pdf",
+      "effectiveDate": "2026-03-17",
+      "periodLabel": "March 17-23, 2026",
+      "sourceUrl": "https://prod-cms.doe.gov.ph/documents/d/guest/11-lfro-price-monitoring-march-17-2026-pdf",
       "products": {
         "gasoline": {
-          "min": 55,
-          "max": 91.64,
-          "average": 70.01
+          "min": 61.5,
+          "max": 119.55,
+          "average": 84.49
         },
         "diesel": {
-          "min": 55,
-          "max": 99.3,
-          "average": 80.53
+          "min": 75.95,
+          "max": 123.2,
+          "average": 102.13
         },
         "kerosene": {
-          "min": 77,
-          "max": 118.75,
-          "average": 104.66
+          "min": 83,
+          "max": 133.2,
+          "average": 121.33
         }
       }
     }
